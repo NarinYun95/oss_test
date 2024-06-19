@@ -4,7 +4,6 @@ body, html {
     width: 100%;
   }
 
-
 .custom-font{
     font-family: 'Orbit',cursive;
     font-size: 4em;
@@ -114,9 +113,13 @@ h3 {
 
 
 .footer {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: auto; /* 자동으로 남은 공간을 채워서 페이지 하단에 위치 */
     background-color: #314dca;
-    color: white;
+    padding: 30px 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: azure;
     text-align: center;
-  }
+}
