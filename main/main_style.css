@@ -82,8 +82,8 @@ body, html {
 }
 
 .subject-img {
-
     height: auto;
+    width: fit-content;
 }
 
 .subject-description {

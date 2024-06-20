@@ -13,8 +13,7 @@ async function initWebcam() {
     window.requestAnimationFrame(loop);
 
     document.getElementById("webcam-container").appendChild(webcam.canvas);
-    document.getElementById("progress-container-webcam").style.display =
-      "block"; // Show progress bars for webcam
+    document.getElementById("progress-container-webcam").style.display = "block"; // Show progress bars for webcam
     console.log("Model loaded successfully");
   }
 }
@@ -105,5 +104,6 @@ function stopWebcam() {
   while (labelContainer.firstChild) {
     labelContainer.removeChild(labelContainer.firstChild);
   }
+  document.getElementById("prediction-result-webcam").style.display = "none"; // Hide prediction result
   document.getElementById("progress-container-webcam").style.display = "none"; // Hide progress bars for webcam
 }
